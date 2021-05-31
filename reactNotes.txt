@@ -1,0 +1,69 @@
+ <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+
+By adding the above three cdn's into html file we can run the react application.
+
+npm and node.js should be installed.
+Project creation:
+
+create-react-app project_name
+cd project_name
+npm start
+
+
+changing port of the localhost:
+1. Add set port = port_number to scripts list in package.json file.
+	"scripts": {
+    "start": "SET PORT=7000 && react-scripts start",
+
+Map function
+
+const array = ["a","b","c"];
+const map_array = array.map((item,pos)=>{
+	return(
+		<div key={pos}>
+		<h3>{item}</h3></div>
+})
+
+Here it's compulsory to mention unique key for each iteration.(pos)
+
+There are two types of modules:
+1. Default export- when we want to export only one fun/module from the file.
+		Here we can give any name while importing it in another file.
+2. Named export- when we want to export multiple fun/module from the file.
+
+
+In react setState is asynchronous function so we may not get the latest value 
+when we access out of that setState function. so to get rid off this issue
+we have callback function in setState i.e.,
+this.setState({
+    cmp2: toggleCmp2
+  },function(){
+    console.log("After");
+    console.log(this.state.cmp2);
+  });
+https://stackoverflow.com/questions/31702861/when-value-is-assigned-to-components-state-why-console-log-prints-the-previous
+https://www.codegrepper.com/code-examples/whatever/input+mui+type+number+delete+arrows 
+https://stackoverflow.com/questions/54332350/how-to-make-a-circle-checkbox-with-material-ui/54332642#
+https://codesandbox.io/s/31wwxmz9x6?file=/src/Main.js:7383-7384
+https://stackblitz.com/run?file=demo.js
+https://codesandbox.io/s/31wwxmz9x6?file=/src/Main.js
+https://codesandbox.io/s/material-ui-navbar-responsive-lf30l?file=/src/components/Toolbar/Toolbar.js
+https://codesandbox.io/s/pp9vpr0460
+https://stackblitz.com/run?file=demo.js
+https://stackblitz.com/run?file=demo.js
+https://stackblitz.com/run?file=demo.js
+https://stackoverflow.com/questions/5083192/what-does-this-size-mean-in-css-font-14px-24px-arial-helvetica-sans-serif
+
+    dactiveTextColor :{
+        padding: '6px 6px 6px 10px',
+        textDecoration: 'none',
+        /* font-size: 0.7em; */
+        font: 'normal normal normal 14px/21px Poppins',
+        color: '#ffffff',
+        display: 'table-cell',
+
+      },
+
